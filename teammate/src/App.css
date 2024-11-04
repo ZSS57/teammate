@@ -1,0 +1,116 @@
+
+body, html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  background: url('./background.jpg') center center / cover no-repeat fixed;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 90%;
+  height: 100%;
+}
+
+h1, h3 {
+  text-align: center;
+}
+
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+input, select {
+  margin: 10px;
+  padding: 10px;
+  font-size: 16px;
+  width: 200px;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+img {
+  margin: 20px;
+  max-width: 80%;
+  height: auto;
+  object-fit: cover;
+}
+
+p {
+  text-align: center;
+  font-size: 18px;
+} 
+
+.button-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px;
+  align-items: center;
+  margin: 20px;
+}
+
+/* .team-container {
+  background-color: darkblue;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px;
+  color: white;
+} */
+
+.team-container {
+  background-color: rgb(36, 97, 239);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px;
+  color: white;
+  flex: 1 1 calc(30% - 20px);
+  box-sizing: border-box;
+  max-width: 300px;
+  cursor: pointer;
+
+}
+
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  overflow-y: auto;
+  max-height: 80vh;
+  max-width: 1200px;
+}
+
+
+@media (max-width: 768px) {
+  .team-container {
+    flex: 1 1 calc(33.33% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .team-container {
+    flex: 1 1 calc(50% - 20px);
+  }
+}
+
+.team-description {
+  font-size: 20px;
+  margin-top: 20px;
+}
