@@ -1,3 +1,31 @@
+/* Navigation links (Home, Create a Team!, Team Gallery) */
+.button-group a {
+  font-size: 20px;  /* Make the text larger */
+  color: black;  /* Make the text black */
+  text-decoration: none;  /* Remove the underline */
+  padding: 10px;
+  margin-top: 50px;
+}
+
+.button-group a:hover {
+  text-decoration: underline; /* Add underline on hover for better UX */
+}
+
+/* View Details button */
+.team-container a {
+  display: inline-block;
+  background-color: white;  
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.team-container a:hover {
+  background-color: #f0f0f0;  /* Light gray for hover effect */
+}
 
 body, html {
   height: 100%;
